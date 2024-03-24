@@ -1,15 +1,43 @@
 <html>
-    <head></head>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"/>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="./Bootstrap.css"></script>
-    <body>
-        <h1 class="text-center p-3 bg-dark text-white m-0 fw-bold lh-1">LOGIN PAGE</h1>
-        <div class="d-flex justify-content-end p-2 bg-dark-subtle text-dark-emphasis">
-            <h6 style="margin-right: 50px; letter-spacing: 5px; font-weight: 1000; ">HOME</h6>
-            <h6 style="margin-right: 50px; letter-spacing: 5px; font-weight: 1000; ">ABOUT</h6>
-            <h6 style="margin-right: 50px; letter-spacing: 5px; font-weight: 1000; ">CONTACT</h6>
-        </div> 
-        <div class="fixed-bottom text-center bg-dark text-white"> &copy All Rights Belong to me</div>
-    </body>
+
+<head></head>
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="./Bootstrap.js"></script>
+
+<body>
+    <h1 class="text-center p-3 bg-dark text-white m-0 fw-bold lh-1">MY FIRST WEBSITE</h1>
+
+    <div class="d-flex justify-content-end p-2 bg-dark-subtle text-dark-emphasis mb-5">
+        <h6 style="margin-right: 50px; letter-spacing: 5px; font-weight: 1000; ">HOME</h6>
+        <h6 style="margin-right: 50px; letter-spacing: 5px; font-weight: 1000; ">ABOUT</h6>
+        <h6 style="margin-right: 50px; letter-spacing: 5px; font-weight: 1000; ">CONTACT</h6>
+    </div>
+
+    <div id="alertbox" class="justify-content-center d-flex fw-bold mb-2"> PUT YOUR LOGIN DETAILS HERE...</div>
+
+    <div class="justify-content-center d-flex">
+        <div class="bg-dark-subtle p-4 col-3 rounded-3 shadow p-3 mb-5 bg-body-tertiary rounded">
+            <div class="container d-flex justify-content-center">
+                <div>
+                    <div class="mb-3 justify-content-center d-flex">
+                        <label class="m-2 fw-bold">USERNAME:</label><input class="form-control bg-body-tertiary" id="user"/>
+                    </div>
+                    <div class="mb-3 justify-content-center d-flex">
+                        <label class="m-2 fw-bold">PASSWORD:</label> <input class="form-control bg-body-tertiary" id="pass"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="justify-content-center d-flex">
+                <button class="btn btn-primary" onclick="logincred()">Login</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="fixed-bottom text-center bg-dark text-white text fs-5 fw-light"> &copy All Rights Belong to me</div>
+</body>
+
 </html>
